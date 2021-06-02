@@ -1,0 +1,9 @@
+.dice{
+    height: 12rem;
+    width: 12rem;
+    box-shadow: $box-shadow;
+    
+    &__container{
+        margin: auto;
+    }
+}

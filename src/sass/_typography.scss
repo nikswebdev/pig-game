@@ -1,0 +1,37 @@
+.player{
+    &__name{
+        font-family: $primary-heading-font;
+        font-size: 6rem;
+        font-weight: 200;
+        color: black;
+        text-transform: uppercase;
+        
+        @include respond(1060){
+            font-size: 4rem;
+        }
+
+        @include respond(457){
+            font-size: 3rem;
+        }
+
+        @include respond(390){
+            font-size: 2rem;
+        }
+    }
+}
+
+
+.totalScore{
+    font-size: 10rem;
+    font-weight: 200;
+}
+
+.current-score{
+    font-size: 3rem;
+
+    &__header{
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+}

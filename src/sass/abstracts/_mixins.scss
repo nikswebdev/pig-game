@@ -1,0 +1,54 @@
+@mixin respond ($breakpoint){
+    @if $breakpoint == 270{
+        @media only screen and (max-width: 16.875em){@content} //270px
+    };
+
+    @if $breakpoint == 390{
+        @media only screen and (max-width: 24.375em){@content} //390px
+    };
+
+    @if $breakpoint == 435{
+        @media only screen and (max-width: 27.1875em){@content} //435px
+    };
+
+    @if $breakpoint == 457{
+        @media only screen and (max-width: 28.5625em){@content} //455px
+    };
+
+    @if $breakpoint == 645{
+        @media only screen and (max-width: 40.3125em){@content} //645px
+    };
+
+    @if $breakpoint == 759{
+        @media only screen and (max-width: 47.4375em){@content} //759px
+    };
+
+    @if $breakpoint == 850{
+        @media only screen and (max-width: 53.125em){@content} //850px
+    };
+
+    @if $breakpoint == 950{
+        @media only screen and (max-width: 59.375em){@content} //950px
+    };
+
+    @if $breakpoint == 970{
+        @media only screen and (max-width: 60.625em){@content} //970px
+    };
+
+    @if $breakpoint == 1060{
+        @media only screen and (max-width: 66.25em){@content} //1060px
+    };
+
+    @if $breakpoint == 1160{
+        @media only screen and (max-width: 72.5em){@content} //1160px
+    };
+
+    @if $breakpoint == 1175{
+        @media only screen and (max-width: 73.4375em){@content} //1175px
+    };
+
+    @if $breakpoint == 1400{
+        @media only screen and (max-width: 87.5em){@content} //1400px
+    };
+
+}

@@ -1,0 +1,135 @@
+.btn{
+    padding: 2rem 4rem;
+    border: none;
+    border-radius: 100px;
+    text-transform: uppercase;
+    box-shadow: $box-shadow;
+    transition: all .2s;
+    cursor: pointer;
+    background-color: $white-high-opacity;
+
+    
+    @include respond(1160){
+        padding:1rem 3rem;
+    }
+
+    @include respond(645){
+        padding: .5rem 2rem;
+        font-size: 1rem;
+    }
+
+    @include respond(435){
+        margin-right: 1.25rem;
+    }
+
+    @include respond(390){
+        visibility: hidden;
+    }
+
+    &:hover{
+        transform: translateY(-.5rem);
+    }
+
+    &:active{
+        transform: translateY(.5rem);
+    }
+
+    &::first-letter{
+        font-size: 2.5rem;
+        @include respond(645){
+            font-size: 1.5rem;
+        }
+
+        @include respond(390){
+            visibility:visible;
+            font-size: 4rem;
+        }
+
+        @include respond(390){
+           font-size: 3rem;
+        }
+    }
+
+    &__roll-dice{
+        margin-top: 47rem;
+        margin-bottom: 1rem;
+
+        @include respond(970){
+            margin-top: 0;
+            margin-bottom: 0rem;
+        }
+
+        &--container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    &__hold{
+        @include respond(390){
+            margin-top: -1.25rem;
+        }
+        
+
+        &--container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    &__new-game{
+        @include respond(970){
+            margin-bottom: 1rem;
+        }
+
+        &--container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            margin-top: 1rem;
+        }
+    }
+    
+    &__container{
+        &--all{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            @include respond(970){
+                margin-top: -7rem;
+                position: absolute;
+                flex-direction: row;
+                width: 75vw;
+                height: auto;
+                justify-content:space-between;
+            }
+
+            @include respond(645){
+                margin-top: -5rem;
+            }
+
+            @include respond(435){
+               margin-top: -6rem;
+            }
+
+            @include respond(390){
+                width: 100%;
+                margin-top: -6rem;
+                margin-left: 1rem;
+            }
+        
+        }
+    }
+}

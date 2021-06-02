@@ -1,0 +1,30 @@
+
+
+@keyframes hoverEffect {
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(2.5rem);
+    }
+    
+    75%{
+        transform: translateY(-2.5rem);
+    } 
+
+    87%{
+        transform: translateY(-1rem);
+        transform: translateX(-.25rem);
+    }
+
+    93%{
+        transform: translateX(.5rem);
+    }
+    
+    100%{
+        transform: translateX(-.25rem);
+        transform: translateY(1rem);
+    } 
+    
+}

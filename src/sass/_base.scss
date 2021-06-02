@@ -1,0 +1,46 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: $primary-paragraph-font;
+    font-weight: 400;
+    line-height: 1.6;
+    background-image: $background-gradient;
+   
+}
+
+.game-container{
+    color: white;
+    display: flex;
+    width: 75vw;
+    height: 81rem;
+    margin: 0 auto;
+    margin-top: 12.5vh;
+    background-color: rgba(255, 255, 255, 0.438);
+       
+
+    @include respond(435){
+        display: block;
+        width: 100vw;
+    }
+
+    @include respond(270){
+        width: 100vw;
+    }
+}
+
+
